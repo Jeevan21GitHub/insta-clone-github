@@ -1,4 +1,8 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 .page{
     display: flex;
     justify-content: center;
@@ -7,6 +11,7 @@
     position: relative;
 
 }
+
 .status p{
     float: left;
     width: 80px;
@@ -26,7 +31,7 @@
 
 }
  .status p:hover{
-    margin-top: -1px;
+    margin-top: -2px;
     box-shadow: 0 6px 10px rgb(43, 2, 2);
     border: 3px solid transparent;
     background: linear-gradient(45deg,white,white) padding-box,linear-gradient(45deg,rgba(17, 212, 50, 0.5),rgba(9, 145, 27, 0.5),rgba(3, 68, 14, .5)) border-box;
@@ -77,8 +82,9 @@
 .flowContent{
     border: 1px solid rgb(228, 204, 204);
     box-shadow: 0 0 1px rgb(231, 229, 229),0 0 7px rgb(226, 223, 223),0 0 1px rgb(158, 155, 155);
-    min-height: 300px;
-    margin-bottom: 5px;
+    min-height: 400px;
+    margin: 10px;
+    
 }
 
 .flowHead{
@@ -116,4 +122,60 @@
 }
 .bleft i{
     padding: 10px;
+}
+@media only screen and (max-width:460px) {
+    .status p{
+       width: 50px;
+       height: 50px;
+       
+    }
+}
+.top{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+.top ul{
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    left: 50px;
+    border-radius: 5px;
+  
+    box-shadow: 0 0 4px white,0 0 7px rgba(17, 5, 5,.5);
+}
+.top ul li{
+    list-style: none;
+    padding: 10px;
+    display: block;
+}
+
+.top ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+.top ul li:hover{
+    background:linear-gradient(45deg,red,orange,rgb(235, 26, 148)) padding-box,linear-gradient(45deg,white ,white,white) border-box;
+    border-radius: 5px;
+}
+.top ul li:first-child{
+    border-bottom: 1px solid grey;
+}
+.top h1 i{
+    cursor: pointer;
+   
+}
+/* .show{
+    display: none;
+    position: absolute;
+    
+} */
+/* .insta i:hover .show{
+    display: block;
+} */
+#show{
+    display: none;
 }
