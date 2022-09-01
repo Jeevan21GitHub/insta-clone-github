@@ -1,0 +1,119 @@
+
+.page{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.status p{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 3px solid transparent;
+    box-shadow: 2px 2px 4px black;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 30px;
+    overflow: hidden;
+    cursor: pointer; 
+    transition: .5s;
+    position: relative;
+    position: sticky;
+
+}
+ .status p:hover{
+    margin-top: -1px;
+    box-shadow: 0 6px 10px rgb(43, 2, 2);
+    border: 3px solid transparent;
+    background: linear-gradient(45deg,white,white) padding-box,linear-gradient(45deg,rgba(17, 212, 50, 0.5),rgba(9, 145, 27, 0.5),rgba(3, 68, 14, .5)) border-box;
+}
+
+.container{
+    display: flex;
+    width: 960pxpx;
+    justify-content: center;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.insta i{
+    font-size: 20px;
+    padding: 4px;
+    
+}
+.icon i{
+    font-size: 25px;
+    margin-right: 25px;
+}
+.top{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+}
+.bottom i{
+    font-size: 20px;
+}
+.dp img{
+   border-radius: 50%;
+   border: 1px solid gray;
+    
+}
+.flowContent{
+    border: 1px solid rgb(228, 204, 204);
+    box-shadow: 0 0 1px rgb(231, 229, 229),0 0 7px rgb(226, 223, 223),0 0 1px rgb(158, 155, 155);
+    min-height: 300px;
+    margin-bottom: 5px;
+}
+
+.flowHead{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    margin:0 15px;
+   
+}
+.marginLeft{
+    display: flex;
+    align-items: center;
+
+}
+.marginLeft i img{
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+.marginLeft p{
+    margin-left: 10px;
+}
+.back{
+   // box-shadow:0  0 2px 0 ,0 0 4px rgb(255, 255, 255);
+}
+/* gradient color */
+.status p{
+    background: linear-gradient(45deg,white,white) padding-box,linear-gradient(45deg,rgba(238, 12, 189,0.5),rgba(238, 11, 11,0.6),rgba(243, 194, 34,0.5)) border-box;
+}
+.flowbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    font-size: 20px;
+}
+.bleft i{
+    padding: 10px;
+}
