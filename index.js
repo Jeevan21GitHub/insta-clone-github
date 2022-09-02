@@ -11,3 +11,13 @@ function function1(){
     }
        
 }
+function editFunction(){
+    var show=document.getElementById("editShow");
+    if(show.style.display==="none"){
+        show.style.display="block";
+        
+    }
+    else{
+        show.style.display="none";
+    }
+}

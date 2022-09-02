@@ -31,10 +31,11 @@
 
 }
  .status p:hover{
-    margin-top: -2px;
+    transform: scale(1.1);
     box-shadow: 0 6px 10px rgb(43, 2, 2);
     border: 3px solid transparent;
     background: linear-gradient(45deg,white,white) padding-box,linear-gradient(45deg,rgba(17, 212, 50, 0.5),rgba(9, 145, 27, 0.5),rgba(3, 68, 14, .5)) border-box;
+    z-index: 1;
 }
 
 .container{
@@ -178,4 +179,98 @@
 } */
 #show{
     display: none;
+}
+.bottom .red:hover{
+    color: red;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.flowbottom .fa-heart:hover{
+    color: red;
+    transform: scale(1.1);
+}
+.flowContent .fa-tag:hover{
+    color: blue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.flowContent .fa-comment:hover{
+    color: orangered;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.flowContent .fa-paper-plane:hover{
+    color: seagreen;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.Hdb{
+    background: linear-gradient(45deg,white,white) padding-box,linear-gradient(45deg,rgba(238, 12, 189,0.5),rgba(238, 11, 11,0.6),rgba(243, 194, 34,0.5)) border-box;
+}
+/* editMenu */
+/* .page{
+   // position: relative
+} */
+
+.editMenu{
+    width: 560px;
+    height: 350px;
+    position: fixed;
+    border-radius:  50px 50px 0 0 ;
+    margin-left: 10px;
+    bottom: 50px;
+    background-color: white;
+    box-shadow: 0 0 4px;
+}
+.eTop i{
+    margin-bottom: 5px;
+    font-size: 30px;
+
+}
+.eIcon{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+}
+.eIcon i{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.eIcon p{
+    margin-bottom: 20px;
+}
+.eIcon .fa-exclamation{
+    width: 15px;
+    color: red;
+    border-color: red;
+}
+.ePara p{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+.ePara p:last-child{
+    border: none;
+}
+#editShow{
+    display: none;
+    transition: .5s;
+}
+/* side content menu */
+.marginRight i{
+    cursor: pointer;
+}
+.marginRight i:hover{
+    color: orange;
+    transform: scale(1.1);
+}
+/* etop fa-minus */
+.eTop .fa-minus:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: orange;
 }
