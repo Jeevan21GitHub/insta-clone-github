@@ -274,3 +274,19 @@
     transform: scale(1.1);
     color: orange;
 }
+/* media query */
+@media only screen and (max-width:460px){
+    .editMenu{
+        width: 100%;
+    }
+    .eIcon i{
+       font-size: 10px;
+       padding: 5px;
+    }
+    .eIcon .fa-exclamation{
+        padding: 3px;
+    }
+    .eIcon p{
+       font-size: 10px;
+    }
+}
